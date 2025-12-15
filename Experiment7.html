@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                border: 2px solid black;
+            }
+
+
+            .container{
+                border : 10px;
+                border-color: black;
+                width: auto;
+                padding: 20px;
+            }
+
+            .header{
+                background-color: lightgray;
+                width: auto;
+                height: 50px;
+                text-align: center;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                font-size: 30px ;
+                padding: 10px;
+                padding-top: 20px;
+                
+            }
+
+            .one-nav ul li a {
+                background-color: rgb(90, 140, 250);
+                color: blue;
+                display: block;
+                border: 2px solid rgb(90, 140, 175);
+                padding: 5px;
+
+            }
+
+            .one-nav ul{
+                list-style: none;
+                display: flex;
+                gap: 10px;
+            }
+
+            .two-nav ul li a {
+                background-color: lightgreen;
+                color: green;
+                display: block;
+                border: 2px solid lawngreen;
+                padding: 5px;
+
+            }
+
+            .two-nav ul{
+                list-style: none;
+                display: flex;
+                gap: 10px;
+            }
+
+            .one-nav ul li a:hover{
+                background-color: mediumslateblue;
+            }
+
+            .two-nav ul li a:hover{
+                background-color: chartreuse;
+            }
+
+        </style>
+        <title>
+            Navigation
+        </title>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "header">
+                <span style = "color: black">My</span>
+                <span style = "color: red">Website</span>
+                <span style = "color: black">Navigation</span>
+            </div>
+            <nav class = "one-nav">
+                <ul>
+                    <li> <a href = "" >Home</a></li>
+                    <li> <a href = "" >About</a></li>
+                    <li> <a href = "" >Services</a></li>
+                    <li> <a href = "" >Contact</a></li>
+                </ul> 
+            </nav>
+            <nav class = "two-nav">
+                <ul>
+                    <li> <a href = "" >Dashboard</a></li>
+                    <li> <a href = "" >Profile</a></li>
+                    <li> <a href = "" >Messages</a></li>
+                    <li> <a href = "" >Logout</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </body>
+</html>

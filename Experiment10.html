@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Responsive E-commerce Navbar
+            </title>
+            <style>
+                .navbar {
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    padding-left:15px;
+                    padding-right:15px;
+                }
+
+                .shopease {
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    margin-bottom: 8px;
+                }
+
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    list-style: none;
+                }
+
+                .menu a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+                }
+
+                .right a {
+                    color: white;
+                    margin-left: 20px;
+                    font-size: 15px;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+
+
+                @media (min-width: 600px) {
+                    .navbar {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .menu {
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+                }
+        
+                @media (min-width: 900px) {
+                    .navbar {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+
+                    .menu {
+                        gap: 35px;
+                    }
+
+                    .menu a {
+                        font-size: 16px;
+                    }
+
+                    .right a {
+                        font-size: 16px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <nav class="navbar">
+                <div class="shopease">ShopEase</div>
+
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="right">
+                    <a href="#">Cart &#128722;</a>
+                    <a href="#">Login</a>
+                </div>
+            </nav>
+            <div class="welcome">
+                <h2>Welcome to ShopEase!</h2>
+                <p>Your one-stop destination for all shopping needs.</p>
+            </div>
+        </body>
+    </html>
